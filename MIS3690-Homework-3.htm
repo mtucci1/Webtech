@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>MIS3690-Homework-3</title>
+        <style type="text/css">
+        
+          body {background-color: black; background-image: url("images/beaver.jpg");
+           background-repeat: repeat-x; background-position: bottom; background-attachment: fixed;}
+          table {background-color:silver; margin-right: auto; margin-left: auto;
+                table-layout: fixed; width: 800px;}
+          caption {text-align: center; color: white; font-size: 3em; padding-bottom: 30px;}
+          .yellow {background-color: yellow;}
+          tr, td {border: 1px solid black; font-family: arial;}
+          #yourself {background-color: white; text-align: center;}
+          #button {text-align: center;}
+          #headings {text-align: center;}
+          .image {text-align: center;}
+          #oops {background-color: red;}
+          
+        </style>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+         <form method="post" action="mailer.php">
+		 <table>
+             <caption>Soap Survey</caption>
+            <tr id="headings">
+                <td>Soap Image</td><td>Soap Color <br/>Preferences</td><td>Soap Purchase <br/>Intent</td>
+                <td>Soap Features Liked</td>
+                </tr>
+            <tr>
+                <td class="image"><img src="images/pearssoap.jpg" width="125"></td>
+                <td><input type="radio" name="color" value="color"/>Green</br>
+                    <input type="radio" name="color" value="color"/>Gold (shown)</br>
+                    <input type="radio" name="color" value="color"/>Red
+                    </td>
+                <td> At $5.00/unit
+                    <select name="intent">
+                        <option value="5">Definitely Buy</option>
+	                    <option value="4">Likely Buy</option>
+                        <option value="3">Undecided</option>
+                        <option value="2">Unlikely Buy</option>
+                        <option value="1">Not Buy</option> 
+                        </select>   
+                <td>
+                <input type="checkbox" name="Q1" value="Shape"/>
+                Shape<br/>
+                <input type="checkbox" name="Q1" value="Size"/>
+                Size<br/>
+                <input type="checkbox" name="Q1" value="Smell"/>
+                Smell<br/>
+                <input type="checkbox" name="Q1" value="Texture"/>
+                Texture<br/>
+                </td></tr>
+                <tr>
+                <td class="image"><img src="images/mysoresandalsoap.jpg" width="125"></td>
+                <td><input type="radio" name="color" value="color"/>Ivory</br>
+                    <input type="radio" name="color" value="color"/>Sandal Wood (shown)</br>
+                    <input type="radio" name="color" value="color"/>Pink
+                    </td>
+                <td> At $8.00/unit
+                    <select name="intent">
+                        <option value="5">Definitely Buy</option>
+	                    <option value="4">Likely Buy</option>
+                        <option value="3">Undecided</option>
+                        <option value="2">Unlikely Buy</option>
+                        <option value="1">Not Buy</option> 
+                        </select>   
+                <td>
+                <input type="checkbox" name="Q1" value="Shape"/>
+                Shape<br/>
+                <input type="checkbox" name="Q1" value="Size"/>
+                Size<br/>
+                <input type="checkbox" name="Q1" value="Smell"/>
+                Smell<br/>
+                <input type="checkbox" name="Q1" value="Texture"/>
+                Texture<br/>
+                </td></tr>
+                <tr>
+                    <td id="yourself" colspan="4">Tell us about yourself...</td></tr>
+                <tr>
+                    <td> Gender:
+                        <select name="gender">
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                            </select></td>
+                    <td colspan="3"> Age (under 25 enter 1, 25-40 enter 2, else enter 3)
+                            <input class="yellow" type="text" name="age" maxlength="3" size="5"/></td>
+                            </tr>
+                <tr><td colspan="2">Your comments are welcome.
+                    <textarea class="yellow" name="comments" rows="5" cols="29"></textarea></td>
+                    <td id="button" colspan="2">
+                    <button type="submit" value="Done" name="Done">Done</button>
+                    <button id="oops" type="reset" value="Oops" name="Oops">Oops</button>
+                    </td></tr>
+            
+        
+        </table>
+        </form>
+    </body>
+</html>
